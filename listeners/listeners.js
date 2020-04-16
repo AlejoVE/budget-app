@@ -15,6 +15,7 @@ function eventListener (){
   // expense form submit
   expenseForm.addEventListener("submit", function(event){
     event.preventDefault();
+    ui.submitExpenseForm();
   })
   
   // expense click
