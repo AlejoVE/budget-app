@@ -19,8 +19,13 @@ function eventListener (){
   })
   
   // expense click
-  expenseList.addEventListener("click", function(){
-  
+  expenseList.addEventListener("click", function(event){
+    if(event.target.parentElement.classList.contains("edit-icon")){
+      ui.editExpense(event.target.parentElement);
+    }
+     else if(event.target.parentElement.classList.contains("delete-icon")){
+      ui.deleteExpense(event.target.parentElement);
+    }
   })
   
   

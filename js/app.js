@@ -114,4 +114,28 @@ class UI {
     this.expenseAmount.textContent = total;
     return total;
   }
+  //edit expense
+  editExpense(element){
+    let id = parseInt(element.dataset.id);
+    let parent = element.parentElement.parentElement.parentElement;
+    //remove from dom
+    this.expenseList.removeChild(parent);
+    //remove from the dom
+    let expense = this.itemList.filter(function(item){
+      return item.id === id;
+    })
+    //show value
+    this.expenseInput.value = expense[0].tittle;
+    this.amountInput.value = expense[0].amount;
+    //remove from list
+    let tempList = this.itemList.filter(function(item){
+      return item.id !== id;
+    })
+    this.itemList = tempList;
+    this.showBalance();
+  }
+  //delete expense
+  deleteExpense(element){
+
+  }
 };
