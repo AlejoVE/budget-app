@@ -103,7 +103,6 @@ class UI {
 
   //total expense
   totalExpense(){
-    debugger;
     let total = 0;
     if (this.itemList.length > 0) {
         total = this.itemList.reduce(function (acc, curr) {
