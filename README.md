@@ -3,9 +3,15 @@
 ## Screenshot:
 ![alt text](https://user-images.githubusercontent.com/59319966/79590352-2e387f80-80d7-11ea-925a-04aa2670aef4.png "Screenshot")
 
-## Introduction:
+## Description:
 
 This project consists of an app that shows the user's budget, expenses and balance. It was created following the [Free Code Camp tutorial](https://www.youtube.com/watch?v=m_HJ3juuFvo)
+
+## Features:
+- Add a budget.
+- Add a expense.
+- Edit a expense.
+- Delete a expense.
 
 ## Technologies:
 - HTML5
